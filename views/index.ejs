@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="main-head">
+      <h1>Personal Blog</h1>
+    </div>
+    <div class="new">
+      <a href="http://localhost:8080/posts/new"><button>create</button></a>
+    </div>
+    <main>
+      <% for(let post of posts){ %>
+      <div class="card">
+        <h2>@<%= post.username %></h2>
+        <img src="<%= post.img %>" alt="blog image" />
+        <p><%= post.content %></p>
+      </div>
+      <% } %>
+    </main>
+  </body>
+</html>

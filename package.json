@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "I create a personal blog where user can upload there information like photos on\r there own account",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MihirKumar-09/Personal-Blog.git"
+  },
+  "keywords": [],
+  "author": "Mihir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MihirKumar-09/Personal-Blog/issues"
+  },
+  "homepage": "https://github.com/MihirKumar-09/Personal-Blog#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "multer": "^2.0.1"
+  }
+}
