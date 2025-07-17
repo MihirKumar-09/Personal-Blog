@@ -11,14 +11,15 @@
   justify-content: center;
   align-items: center;
 }
-h1 {
+h1,
+h3 {
   color: blue;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
   text-decoration: underline;
 }
 main {
-  height: 1200px;
+  height: auto;
   width: 1400px;
   margin: 30px auto;
   display: flex;
@@ -28,7 +29,7 @@ main {
   border-radius: 20px;
 }
 .card {
-  height: 500px;
+  height: 600px;
   width: 400px;
   margin: 10px 0px 20px 38px;
   display: flex;
@@ -69,6 +70,7 @@ button {
   border-radius: 5px;
   background-color: cadetblue;
   outline: 0;
+  cursor: pointer;
 }
 .container {
   height: 700px;

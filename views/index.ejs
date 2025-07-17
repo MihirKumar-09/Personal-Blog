@@ -16,10 +16,16 @@
     <main>
       <% for(let post of posts){ %>
       <div class="card">
-        <h2>@<%= post.username %></h2>
+        <h2>@<%= post.username.toLowerCase() %></h2>
         <img src="<%= post.img %>" alt="blog image" />
         <p><%= post.content %></p>
+        <a href="http://localhost:8080/posts/<%= post.id %>">See in details</a>
+        <a href="http://localhost:8080/posts/<%= post.id%>/edit">Edit</a>
+        <form method="POST" action="/posts/<%= post.id %>?_method=DELETE">
+          <button class="delete-btn">Delete</button>
+        </form>
       </div>
+
       <% } %>
     </main>
   </body>
